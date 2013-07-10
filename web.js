@@ -6,7 +6,7 @@ var buffer = new Buffer(fs.readFileSync('index.html'));
 
 //console.log(buffer);
 
-var display = buffer.toString(buffer);
+var display = buffer.toString('utf8',buffer);
 
 app.get('/', function(request, response) {
     response.send(display);
