@@ -17,8 +17,9 @@ var assertFileExists = function(infile) {
     return instr;
 };
 
+ /*
 var assertSiteExists = function(infile) {
-   var instr = rest.get(infile).on('complete',function(result)  {
+    var instr = rest.get(infile.toString()).on('complete',function(result) { 
 	if (result instanceof Error) {
 	    console.log("%s does not exist, loser.", infile);
 	}
@@ -27,8 +28,25 @@ var assertSiteExists = function(infile) {
 	    console.log(result);
 	    return instr;
 	} 
-    })};
-				
+    }
+					      );
+};
+ */
+// /*
+var assertSiteExists = function(infile) {
+    var instr = rest.get(infile).on('complete', function(sidebar) {
+	//fs.writeFileSync("output.txt", instr);
+	return instr;
+    }
+				   );
+};
+//    var sidebar = function(sidebar) {
+//	console.log(instr);
+//	return instr;
+  //  };
+ //   return instr;
+//};
+// */				
 var cheerioHtmlFile = function(htmlfile) {
     return cheerio.load(fs.readFileSync(htmlfile));
 };
@@ -56,11 +74,12 @@ if(require.main == module) {
     program
         .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
         .option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
-        .option('-u, --url <url_address>', 'Path to url', clone(assertSiteExists), URL_DEFAULT)
+        .option('-u, --url <url_address>', 'Path to url', assertSiteExists, URL_DEFAULT)
         .parse(process.argv);
     var checkJson = checkHtmlFile(program.file, program.checks);
     var outJson = JSON.stringify(checkJson, null, 4);
     console.log(outJson);
+    fs.writeFileSync("output.txt", outJson + "\n");
 } else {
     exports.checkHTMLFile = checkHtmlFile;
 }
