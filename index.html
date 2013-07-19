@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+<!--	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> -->
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,21 +15,21 @@
     <style type"text/css">
 
       /* large desktop */
-      @media (min-width=980px) {
+      @media (min-width: 980px) {
       body {
       padding-top: 60px;
        }
-      .linediv-1 {
+      .linediv-l {
       border-right: 1px white solid;
        }
       .linediv-r {
-      border-left: 1px white solid;
+        border-left: 1px white solid;
        }
       }
 
 //dreams start here
       /* Landscape phones and down */
-      @media (max-width: 480 px) {
+      @media (max-width: 480px) {
       .copy {
         padding: 2.5% 10%;
        }
@@ -47,6 +48,7 @@
       body {
        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
        text-align: center;
+	  }
       .heading, .subheading {
        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
        text-align: center;
@@ -69,7 +71,7 @@
        padding: 2% 0%;
       }
       .actions {
-       background-color: #343434
+       background-color: #343434;
        padding: 3% 0%;
       }
       .video, .thermometer, .order, .social, .statistics {
@@ -104,52 +106,52 @@
       
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-	<div class="container">
-	  <button type="button" class="btn btn-navbar"
-		  data-toggle="collapse" data-target=".nav-collapse">
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	  </button>
-	  <a class="brand" href="#">Bitstarter</a>
-	  <div class="nav-collapse collapse">
-	    <ul class="nav">
-	      <li class="active"><a href="#">home</a></li>
-	      <li class="about"><a href="#about">about</a></li>
-	      <li class="contact"><a href="#contact">contact</a></li>
-	    </ul>
-	  </div>
-	</div>
-      </div>
-    </div>
+		<div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="brand" href="#">Bitstarter</a>
+			<div class="nav-collapse collapse">
+			  <ul class="nav">
+				<li class="active"><a href="#">home</a></li>
+				<li class="about"><a href="#about">about</a></li>
+				<li class="contact"><a href="#contact">contact</a></li>
+			  </ul>
+		    </div>
+	     </div>
+       </div>
+     </div>
     
     <div class="container">
       <div class="row-fluid heading">
-	<div class="span12">
-	  <h1>the product</h1>
-	</div>
-      </div>
+		<div class="span12">
+		  <h1>the product</h1>
+		</div>
+	  </div>
       <div class="row-fluid subheading">
-	<div class="span12">
-	  <p class="lead">give me a one sentence description.</p>
-	</div>
-      </div>
+		<div class="span12">
+		<p class="lead">give me a one sentence description.</p>
+		</div>
+	  </div>
       <div class="row-fluid pitch">
-	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
+		<div class="span5 offset1 video">
+		  <img class="img-polaroid" src="http://placehold.it/480x300">
+	  </div>
 	<!-- statistics -->
 	<div class="span5 actions">
-	  <div class="statistics">
-	    <div class="span4">
-	      <div class="line-div-l">
-		<h3>1000</h3> <p>backers</p>
+	  <div class="span8 offset2">	
+		<div class="statistics">
+		  <div class="span4">
+			<div class="linediv-l">
+			<h3>1000</h3> <p>backers</p>
+	        </div>
 	      </div>
-	    </div>
-	    <div class="span4">
-	      <div class="linediv-c">
-		<h3>$6000</h3> <p>of $10,000</p>
-	      </div>
+	      <div class="span4">
+	        <div class="linediv-c">
+			<h3>$6000</h3> <p>of $10,000</p>
+	        </div>
 	    </div>
 	    <div class="span4">
 	      <div class="linediv-r">
@@ -160,31 +162,32 @@
 	</div>
 	<div class="span10 offset1">
 	  <!-- Bootstrap progress bar -->
-	  <button class="btn btn-twitter"><i class="icon-twitter"></i> | twitter</button>
-	  <button class="btn btn-facebook"><i class="icon-facebook"></i> | facebook</button>
-	</div>
-      </div>
-    <div>
+	  <div class="thermometer progress active">
+		<button class="btn btn-twitter"><i class="icon-twitter"></i> | twitter</button>
+		<button class="btn btn-facebook"><i class="icon-facebook"></i> | facebook</button>
+	  </div>
+    </div>
+   </div>
 
     <!-- marketing -->
 
     <div class="row-fluid section1">
       <div class="span5 offset1 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+		<img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
       <div class="span5 copy">
-	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis hendrerit lorem, a iaculis dui egestas ac. Suspendisse libero tellus, consectetur at vulputate non, blandit nec metus. Morbi sollicitudin mi felis, eget auctor sem pulvinar non. Mauris erat ligula, vehicula non risus vel, molestie hendrerit felis. In laoreet elementum enim, ut sodales neque facilisis vel. Cras risus purus, faucibus ac justo id, dapibus adipiscing enim. In convallis faucibus felis eget tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sit amet justo odio. Proin placerat lectus sed sem accumsan, vitae egestas enim rhoncus. Proin vel cursus enim. 
-	</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis hendrerit lorem, a iaculis dui egestas ac. Suspendisse libero tellus, consectetur at vulputate non, blandit nec metus. Morbi sollicitudin mi felis, eget auctor sem pulvinar non. Mauris erat ligula, vehicula non risus vel, molestie hendrerit felis. In laoreet elementum enim, ut sodales neque facilisis vel. Cras risus purus, faucibus ac justo id, dapibus adipiscing enim. In convallis faucibus felis eget tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sit amet justo odio. Proin placerat lectus sed sem accumsan, vitae egestas enim rhoncus. Proin vel cursus enim. 
+		</p>
       </div>
     </div>
     
     <div class="row-fluid section2">
       <div class="span5 offset1 copy copy-right">
-	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis hendrerit lorem, a iaculis dui egestas ac. Suspendisse libero tellus, consectetur at vulputate non, blandit nec metus. Morbi sollicitudin mi felis, eget auctor sem pulvinar non. Mauris erat ligula, vehicula non risus vel, molestie hendrerit felis. In laoreet elementum enim, ut sodales neque facilisis vel. Cras risus purus, faucibus ac justo id, dapibus adipiscing enim. In convallis faucibus felis eget tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sit amet justo odio. Proin placerat lectus sed sem accumsan, vitae egestas enim rhoncus. Proin vel cursus enim. 
-	</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis hendrerit lorem, a iaculis dui egestas ac. Suspendisse libero tellus, consectetur at vulputate non, blandit nec metus. Morbi sollicitudin mi felis, eget auctor sem pulvinar non. Mauris erat ligula, vehicula non risus vel, molestie hendrerit felis. In laoreet elementum enim, ut sodales neque facilisis vel. Cras risus purus, faucibus ac justo id, dapibus adipiscing enim. In convallis faucibus felis eget tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sit amet justo odio. Proin placerat lectus sed sem accumsan, vitae egestas enim rhoncus. Proin vel cursus enim. 
+		</p>
       </div>
       <div class="span5 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+		<img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
     </div>
 	  
@@ -193,44 +196,62 @@
     
     <div class="row-fluid faq">
       <div class="span10 offset1">
-	<h3>faq</h3>
-	<div class="accordion" id="accordion2">
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		What is 2 + 2?
-		</a>
-	      </div>
-	      <div id="collapseOne" class="accordion-body collapse">
-		<div class="accordion-inner">
-		  4, ya goof.
-		</div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-      <div>
+		<h3>faq</h3>
+		<div class="accordion" id="accordion2">
+		  <div class="accordion-group">
+	        <div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+			What is 2 + 2?
+			</a>
+	        </div>
+	        <div id="collapseOne" class="accordion-body collapse">
+			  <div class="accordion-inner">
+			4, ya goof.
+			  </div>
+	        </div>
+	     </div>
+		 <div class="accordion-group">
+            <div class="accordion-heading">
+             <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
+                    What's a Frequently Asked Question?
+             </a>
+             </div>
+			 <div id="collapseTwo" class="accordion-body collapse">
+			   <div class="accordion-inner">
+                    A question which is commonly asked by users.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
 
 		 
 	
-      <div class="row-fluid footer">
-	<div class="span12">
-	  <p>this work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0
-	      </a>
-	     the cruft!</p>
+	<div class="row-fluid footer">
+		<div class="span12">
+		<p>this work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0
+			</a>
+			the cruft!</p>
+		</div>
 	</div>
-      </div>
-    </div>
-  </body>
+  </div>
+  
+</body>
 </html>
-		 
-	  
-      
-	      
-
-asadasdas
-asadasdas
+		
 
 
 
-</html>
+
+
+
+
+
+
+
+
+
+
+
